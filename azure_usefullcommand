@@ -1,0 +1,2 @@
+#service principal
+az ad sp create-for-rbac --name registryapp --scopes $(az acr show --name appregistry200390 --query id --output tsv) --role acrpull
